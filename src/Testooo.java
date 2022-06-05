@@ -34,6 +34,7 @@ public class Testooo {
 			writer2.write("\n" + name);
 		}
 		writer2.close();
+		System.out.println("ggg");
 		
 		//BufferedReader
 		
