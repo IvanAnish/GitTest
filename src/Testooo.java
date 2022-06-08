@@ -1,6 +1,8 @@
+import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Scanner;
@@ -34,10 +36,14 @@ public class Testooo {
 			writer2.write("\n" + name);
 		}
 		writer2.close();
-		System.out.println("ggg");
 		
 		//BufferedReader
-		
+		BufferedReader reader = new BufferedReader(new FileReader("/Users/ivan/Desktop/bufferedOutput.txt"));
+		String line;
+		while((line = reader.readLine()) != null) {
+			System.out.println(line);
+		}
+		reader.close();
 		
 		
 		
