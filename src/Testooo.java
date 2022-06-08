@@ -45,6 +45,18 @@ public class Testooo {
 		}
 		reader.close();
 		
+		//delete file
+		File markedForDeath = new File("/Users/ivan/Desktop/marked for death.txt");
+		Scanner kb = new Scanner(System.in);
+		System.out.println("delete file?");
+		if(kb.nextInt()==1) {
+			markedForDeath.delete();
+			System.out.println("ok");
+		}
+		else {
+			System.out.println("pussy");
+		}
+		
 		
 		
 		
